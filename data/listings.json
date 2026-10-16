@@ -1,0 +1,137 @@
+[
+  {
+    "property_id": "L001",
+    "location": "Bandra West, Mumbai",
+    "price": 45000000,
+    "bedrooms": 3,
+    "property_type": "apartment",
+    "buy_or_rent": "buy",
+    "description": "Sea-facing 3BHK apartment in a gated society with gym, pool and 24x7 security. 5 minutes from Bandstand promenade."
+  },
+  {
+    "property_id": "L002",
+    "location": "Andheri West, Mumbai",
+    "price": 85000,
+    "bedrooms": 2,
+    "property_type": "apartment",
+    "buy_or_rent": "rent",
+    "description": "Fully furnished 2BHK near Versova metro station. Ideal for working professionals. Maintenance included in rent."
+  },
+  {
+    "property_id": "L003",
+    "location": "Koramangala, Bengaluru",
+    "price": 28000000,
+    "bedrooms": 3,
+    "property_type": "apartment",
+    "buy_or_rent": "buy",
+    "description": "3BHK in a premium gated community with clubhouse and co-working space. Walking distance to cafes and tech parks."
+  },
+  {
+    "property_id": "L004",
+    "location": "HSR Layout, Bengaluru",
+    "price": 45000,
+    "bedrooms": 1,
+    "property_type": "apartment",
+    "buy_or_rent": "rent",
+    "description": "Compact semi-furnished 1BHK, perfect for a single professional. Covered parking and power backup."
+  },
+  {
+    "property_id": "L005",
+    "location": "Gurgaon Sector 56, Delhi NCR",
+    "price": 18500000,
+    "bedrooms": 4,
+    "property_type": "villa",
+    "buy_or_rent": "buy",
+    "description": "Independent 4BHK villa with private garden and terrace. Gated colony with park-facing units."
+  },
+  {
+    "property_id": "L006",
+    "location": "Dwarka Sector 12, Delhi",
+    "price": 35000,
+    "bedrooms": 3,
+    "property_type": "apartment",
+    "buy_or_rent": "rent",
+    "description": "Spacious 3BHK society flat, metro connectivity on walking distance, schools nearby. Family preferred."
+  },
+  {
+    "property_id": "L007",
+    "location": "Powai, Mumbai",
+    "price": 32000000,
+    "bedrooms": 3,
+    "property_type": "apartment",
+    "buy_or_rent": "buy",
+    "description": "Lake-view 3BHK in a well-known township with international school inside the campus."
+  },
+  {
+    "property_id": "L008",
+    "location": "Whitefield, Bengaluru",
+    "price": 12000000,
+    "bedrooms": 2,
+    "property_type": "apartment",
+    "buy_or_rent": "buy",
+    "description": "Newly constructed 2BHK with modular kitchen and balcony. IT hub connectivity via road and metro."
+  },
+  {
+    "property_id": "L009",
+    "location": "Vasant Kunj, Delhi",
+    "price": 250000,
+    "bedrooms": 4,
+    "property_type": "villa",
+    "buy_or_rent": "rent",
+    "description": "Luxury 4BHK farmhouse-style villa on rent, forest-facing, with driver quarters and servant rooms."
+  },
+  {
+    "property_id": "L010",
+    "location": "Juhu, Mumbai",
+    "price": 95000000,
+    "bedrooms": 4,
+    "property_type": "penthouse",
+    "buy_or_rent": "buy",
+    "description": "Ultra-premium sea-facing penthouse with private deck, home theatre and imported fittings."
+  },
+  {
+    "property_id": "L011",
+    "location": "Indiranagar, Bengaluru",
+    "price": 150000,
+    "bedrooms": 2,
+    "property_type": "apartment",
+    "buy_or_rent": "rent",
+    "description": "Tastefully renovated 2BHK on 100 Feet Road, above boutique retail. Pet friendly building."
+  },
+  {
+    "property_id": "L012",
+    "location": "Noida Sector 150, Delhi NCR",
+    "price": 16000000,
+    "bedrooms": 3,
+    "property_type": "apartment",
+    "buy_or_rent": "buy",
+    "description": "Low-density 3BHK project with 80% open green area, cricket pitch and olympic-size swimming pool."
+  },
+  {
+    "property_id": "L013",
+    "location": "Malad West, Mumbai",
+    "price": 22000,
+    "bedrooms": 1,
+    "property_type": "studio",
+    "buy_or_rent": "rent",
+    "description": "Affordable furnished studio apartment near Inorbit mall. Water and maintenance included."
+  },
+  {
+    "property_id": "L014",
+    "location": "Sarjapur Road, Bengaluru",
+    "price": 9500000,
+    "bedrooms": 2,
+    "property_type": "villa",
+    "buy_or_rent": "buy",
+    "description": "Row villa 2BHK with own roof rights in a community of 60 homes. Ideal first purchase for families."
+  },
+  {
+    "property_id": "L015",
+    "location": "Gurgaon Sector 44, Delhi NCR",
+    "price": 110000,
+    "bedrooms": 3,
+    "property_type": "apartment",
+    "buy_or_rent": "rent",
+    "description": "Premium 3BHK on rent with golf-course view, concierge services and club membership privileges."
+  }
+]

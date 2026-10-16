@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Should I buy or rent?",
+    "answer": "Buying builds long-term equity and gives stability, but needs a down payment (typically 20%) and loan eligibility. Renting needs less upfront cash and gives flexibility to move. A good rule of thumb: if you plan to stay in the same city for 5+ years, buying is usually cheaper overall."
+  },
+  {
+    "question": "How does the property viewing process work?",
+    "answer": "Tell us the property you're interested in and a preferred time. We propose a slot, a human agent confirms it after internal approval, and the agent meets you at the property. Carry a photo ID for entry into gated societies."
+  },
+  {
+    "question": "What documents do I need to buy a property?",
+    "answer": "Typically: PAN card, Aadhaar, address proof, income proof (salary slips or ITR for loan), bank statements for the last 6 months, and passport-size photos. For the property itself, verify the title deed, encumbrance certificate, approved building plan, and occupancy certificate."
+  },
+  {
+    "question": "What documents do I need to rent a property?",
+    "answer": "Usually: PAN card, Aadhaar, address proof, employment proof or business proof, and bank statements. Most landlords also ask for a security deposit of 2-6 months' rent."
+  },
+  {
+    "question": "How much is the security deposit?",
+    "answer": "For rentals, landlords typically ask 2-6 months' rent as deposit depending on the city and property value. The deposit is refundable at the end of the agreement, subject to deductions for damages."
+  },
+  {
+    "question": "What fees does your agency charge?",
+    "answer": "For rentals we usually charge a brokerage of half to one month's rent, paid by the tenant once the agreement is signed. For purchases, brokerage is typically 1-2% of the sale price, mutually agreed in advance. There are no charges for browsing listings or attending viewings."
+  },
+  {
+    "question": "How long does a property purchase take?",
+    "answer": "From booking to registration typically takes 2-6 months for resale properties (title verification and loan processing take the longest). For under-construction properties it depends on the project timeline. Registration itself is usually completed within a few weeks of loan disbursal."
+  },
+  {
+    "question": "What is stamp duty and registration?",
+    "answer": "Stamp duty is a state government tax on property transfer, usually 5-7% of the property value (varies by state; many states give a discount for female buyers). Registration charges are a smaller fee (typically around 1%) paid at the sub-registrar office to legally record the sale in your name."
+  },
+  {
+    "question": "Can I negotiate the price?",
+    "answer": "Yes. On resale properties there is usually some room to negotiate, especially if the seller is motivated. We can help you benchmark against recent comparable sales in the same locality and negotiate on your behalf."
+  },
+  {
+    "question": "What is an encumbrance certificate?",
+    "answer": "An encumbrance certificate (EC) proves the property is free from legal dues like unpaid loans or court disputes. Always check the EC for the last 10-30 years before buying; we help arrange this during due diligence."
+  }
+]
