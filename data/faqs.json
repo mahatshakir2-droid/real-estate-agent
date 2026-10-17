@@ -9,15 +9,15 @@
   },
   {
     "question": "What documents do I need to buy a property?",
-    "answer": "Typically: PAN card, Aadhaar, address proof, income proof (salary slips or ITR for loan), bank statements for the last 6 months, and passport-size photos. For the property itself, verify the title deed, encumbrance certificate, approved building plan, and occupancy certificate."
+    "answer": "Typically: your Kenyan national ID or passport, KRA PIN certificate, proof of income (payslips or business accounts for a loan), bank statements for the last 6 months, and passport-size photos. For the property itself, verify the title deed, official search certificate from the Lands registry, approved building plan, and rates clearance certificate."
   },
   {
     "question": "What documents do I need to rent a property?",
-    "answer": "Usually: PAN card, Aadhaar, address proof, employment proof or business proof, and bank statements. Most landlords also ask for a security deposit of 2-6 months' rent."
+    "answer": "Usually: your Kenyan national ID or passport, KRA PIN, employment or business proof, and bank statements. Most landlords also ask for a security deposit of 1-3 months' rent."
   },
   {
     "question": "How much is the security deposit?",
-    "answer": "For rentals, landlords typically ask 2-6 months' rent as deposit depending on the city and property value. The deposit is refundable at the end of the agreement, subject to deductions for damages."
+    "answer": "For rentals, landlords typically ask 1-3 months' rent as deposit depending on the location and property value. The deposit is refundable at the end of the agreement, subject to deductions for damages."
   },
   {
     "question": "What fees does your agency charge?",
@@ -29,7 +29,7 @@
   },
   {
     "question": "What is stamp duty and registration?",
-    "answer": "Stamp duty is a state government tax on property transfer, usually 5-7% of the property value (varies by state; many states give a discount for female buyers). Registration charges are a smaller fee (typically around 1%) paid at the sub-registrar office to legally record the sale in your name."
+    "answer": "Stamp duty is a government tax on property transfer, usually 4% of the property value in urban areas (1% in rural areas). Registration fees are a smaller additional cost paid at the Lands office to legally record the sale in your name."
   },
   {
     "question": "Can I negotiate the price?",

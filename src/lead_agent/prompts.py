@@ -16,9 +16,9 @@ You are a real-estate lead qualifier. Extract lead details from the conversation
 Only extract what the user actually said; never invent values.
 
 Rules:
-- budget: integer in INR (total price if buying, monthly rent if renting). Convert "50 lakhs" -> 5000000, "1 lakh per month" -> 100000.
+- budget: integer in KSh (total price if buying, monthly rent if renting). Convert "28 million" -> 28000000, "80,000 per month" -> 80000.
 - location: city or neighbourhood as the user phrased it.
-- bedrooms: integer count (studio -> 0, "2BHK" -> 2).
+- bedrooms: integer count (studio -> 0, "2 bedrooms" -> 2).
 - buy_or_rent: must be exactly "buy" or "rent". If the user does not clearly indicate, leave null.
 
 If the same field is stated more than once, use the latest value."""
@@ -26,9 +26,11 @@ If the same field is stated more than once, use the latest value."""
 SEARCH_SYSTEM_PROMPT = """\
 You are a property search assistant. Use the search_listings tool to find homes matching
 the lead's profile below. Call the tool once with all known criteria. Then present at most
-3 of the returned listings in a friendly message: mention property_id, location, price,
-bedrooms and one highlight from the description. If the tool returns no matches, say so
-and suggest relaxing one criterion (usually budget or location).
+3 of the returned listings as short one-line entries, each starting with a relevant emoji.
+Do NOT use a markdown table. Format each listing like:
+🏠 L002 — Kilimani, Nairobi · KSh 85,000/month · 2 bedrooms · fully furnished
+Include the property_id, location, price, bedrooms and one highlight from the description.
+If the tool returns no matches, say so and suggest relaxing one criterion (usually budget or location).
 
 Lead profile: {lead_profile}"""
 

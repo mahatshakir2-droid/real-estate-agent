@@ -47,7 +47,7 @@ def search_listings(
     buy_or_rent: str | None = None,
 ) -> str:
     """Search property listings by budget (total price for buy, monthly rent for rent),
-    location (city or neighbourhood substring, e.g. 'Bandra' or 'Mumbai'),
+    location (city or neighbourhood substring, e.g. 'Kilimani' or 'Nairobi'),
     bedrooms (exact count), and buy_or_rent ('buy' or 'rent').
 
     All provided filters are applied together. Budget matches use a +/-15% tolerance.

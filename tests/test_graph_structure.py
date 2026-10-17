@@ -45,12 +45,12 @@ class FakeSearchLLM:
                 tool_calls=[
                     {
                         "name": "search_listings",
-                        "args": {"location": "Mumbai", "bedrooms": 2, "buy_or_rent": "rent"},
+                        "args": {"location": "Nairobi", "bedrooms": 2, "buy_or_rent": "rent"},
                         "id": f"call_{self.calls}",
                     }
                 ],
             )
-        return AIMessage(content="Found L002: fully furnished 2BHK in Andheri West at INR 85,000/month.")
+        return AIMessage(content="Found L002: fully furnished 2-bedroom apartment in Kilimani at KSh 85,000/month.")
 
 
 def patch_all():
@@ -71,10 +71,10 @@ def test_search_with_memory():
     INTENT_SCRIPT.clear()
     INTENT_SCRIPT.extend(["property_search"])
     agent = build_graph(make_checkpointer())
-    cfg = {"configurable": {"thread_id": "+910000000001"}}
+    cfg = {"configurable": {"thread_id": "+254700000001"}}
 
-    state = {"phone": "+910000000001", "user_message": "find rentals", "lead": LeadProfile(
-        budget=85000, location="Mumbai", bedrooms=2, buy_or_rent="rent")}
+    state = {"phone": "+254700000001", "user_message": "find rentals", "lead": LeadProfile(
+        budget=85000, location="Nairobi", bedrooms=2, buy_or_rent="rent")}
     out = agent.invoke(state, cfg)
     assert "L002" in out["agent_reply"], out["agent_reply"]
     assert out["matched_property_ids"] == ["L002"], out["matched_property_ids"]
@@ -82,7 +82,7 @@ def test_search_with_memory():
 
     # New thread resumes the stored state: no lead passed, still finds the same listing.
     INTENT_SCRIPT.append("property_search")
-    out2 = agent.invoke({"phone": "+910000000001", "user_message": "again"}, cfg)
+    out2 = agent.invoke({"phone": "+254700000001", "user_message": "again"}, cfg)
     assert out2["matched_property_ids"] == ["L002"], out2["matched_property_ids"]
     print("OK: checkpointer memory persisted the lead across messages")
 
@@ -93,12 +93,12 @@ def test_qualifier_loop():
     INTENT_SCRIPT.extend(["property_search"])
 
     def partial_extract(message, previous):
-        return LeadProfile(location="Mumbai", buy_or_rent="rent")  # budget + bedrooms still missing
+        return LeadProfile(location="Nairobi", buy_or_rent="rent")  # budget + bedrooms still missing
 
     qualifier_mod.extract_profile = partial_extract
     agent = build_graph(make_checkpointer())
-    cfg = {"configurable": {"thread_id": "+910000000002"}}
-    out = agent.invoke({"phone": "+910000000002", "user_message": "rent something in Mumbai"}, cfg)
+    cfg = {"configurable": {"thread_id": "+254700000002"}}
+    out = agent.invoke({"phone": "+254700000002", "user_message": "rent something in Nairobi"}, cfg)
     # Profile incomplete -> qualifier loops -> asks for a missing field, never reaches search.
     assert out["intent"] == "property_search"
     assert "budget" in out["agent_reply"], out["agent_reply"]
@@ -111,10 +111,10 @@ def test_viewing_interrupt_approve():
     INTENT_SCRIPT.clear()
     INTENT_SCRIPT.extend(["viewing_request"])
     agent = build_graph(make_checkpointer())
-    cfg = {"configurable": {"thread_id": "+910000000003"}}
+    cfg = {"configurable": {"thread_id": "+254700000003"}}
 
     out = agent.invoke(
-        {"phone": "+910000000003", "user_message": "I want to view L010",
+        {"phone": "+254700000003", "user_message": "I want to view L010",
          "matched_property_ids": ["L010"]},
         cfg,
     )
@@ -136,8 +136,8 @@ def test_viewing_interrupt_reject():
     INTENT_SCRIPT.clear()
     INTENT_SCRIPT.extend(["viewing_request"])
     agent = build_graph(make_checkpointer())
-    cfg = {"configurable": {"thread_id": "+910000000004"}}
-    out = agent.invoke({"phone": "+910000000004", "user_message": "view L001"}, cfg)
+    cfg = {"configurable": {"thread_id": "+254700000004"}}
+    out = agent.invoke({"phone": "+254700000004", "user_message": "view L001"}, cfg)
     assert out.get("__interrupt__")
     resumed = agent.invoke(Command(resume={"approved": False}), cfg)
     assert resumed["last_proposal"].status == "rejected"
@@ -150,15 +150,15 @@ def test_faq_and_handoff():
 
     INTENT_SCRIPT.clear()
     INTENT_SCRIPT.extend(["general_faq"])
-    cfg = {"configurable": {"thread_id": "+910000000005"}}
-    out = agent.invoke({"phone": "+910000000005", "user_message": "buy or rent?"}, cfg)
+    cfg = {"configurable": {"thread_id": "+254700000005"}}
+    out = agent.invoke({"phone": "+254700000005", "user_message": "buy or rent?"}, cfg)
     assert out["agent_reply"] == "FAQ-STUB-ANSWER"
     print("OK: faq path returns grounded answer")
 
     INTENT_SCRIPT.clear()
     INTENT_SCRIPT.extend(["human_handoff"])
-    cfg2 = {"configurable": {"thread_id": "+910000000006"}}
-    out = agent.invoke({"phone": "+910000000006", "user_message": "get me a human"}, cfg2)
+    cfg2 = {"configurable": {"thread_id": "+254700000006"}}
+    out = agent.invoke({"phone": "+254700000006", "user_message": "get me a human"}, cfg2)
     assert out["handed_off"] is True
     assert "human" in out["agent_reply"].lower()
     print("OK: handoff path flags the lead and notifies the user")

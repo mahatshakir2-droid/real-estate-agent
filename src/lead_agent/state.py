@@ -16,7 +16,7 @@ from pydantic import BaseModel, Field
 class LeadProfile(BaseModel):
     """Collected qualification details for a lead. Fields start unset."""
 
-    budget: Optional[int] = Field(default=None, description="Total price for buy, monthly rent for rent, in INR")
+    budget: Optional[int] = Field(default=None, description="Total price for buy, monthly rent for rent, in KSh")
     location: Optional[str] = Field(default=None, description="Preferred city or neighbourhood")
     bedrooms: Optional[int] = Field(default=None, description="Number of bedrooms")
     buy_or_rent: Optional[Literal["buy", "rent"]] = Field(default=None, description="Intent: buy or rent")

@@ -1,137 +1,137 @@
 [
   {
     "property_id": "L001",
-    "location": "Bandra West, Mumbai",
-    "price": 45000000,
+    "location": "Kilimani, Nairobi",
+    "price": 18500000,
     "bedrooms": 3,
     "property_type": "apartment",
     "buy_or_rent": "buy",
-    "description": "Sea-facing 3BHK apartment in a gated society with gym, pool and 24x7 security. 5 minutes from Bandstand promenade."
+    "description": "Modern 3-bedroom apartment in Kilimani with balcony, gym and 24/7 security. Walking distance to Yaya Centre and top schools."
   },
   {
     "property_id": "L002",
-    "location": "Andheri West, Mumbai",
+    "location": "Kilimani, Nairobi",
     "price": 85000,
     "bedrooms": 2,
     "property_type": "apartment",
     "buy_or_rent": "rent",
-    "description": "Fully furnished 2BHK near Versova metro station. Ideal for working professionals. Maintenance included in rent."
+    "description": "Fully furnished 2-bedroom apartment near Kilimani Plaza. Ideal for working professionals. Borehole water and backup power included."
   },
   {
     "property_id": "L003",
-    "location": "Koramangala, Bengaluru",
+    "location": "Westlands, Nairobi",
     "price": 28000000,
     "bedrooms": 3,
     "property_type": "apartment",
     "buy_or_rent": "buy",
-    "description": "3BHK in a premium gated community with clubhouse and co-working space. Walking distance to cafes and tech parks."
+    "description": "3-bedroom apartment in a premium Westlands gated community with clubhouse and co-working space. Minutes from Sarit Centre."
   },
   {
     "property_id": "L004",
-    "location": "HSR Layout, Bengaluru",
+    "location": "Westlands, Nairobi",
     "price": 45000,
     "bedrooms": 1,
     "property_type": "apartment",
     "buy_or_rent": "rent",
-    "description": "Compact semi-furnished 1BHK, perfect for a single professional. Covered parking and power backup."
+    "description": "Compact furnished 1-bedroom in Westlands, perfect for a single professional. Secure parking and standby generator."
   },
   {
     "property_id": "L005",
-    "location": "Gurgaon Sector 56, Delhi NCR",
-    "price": 18500000,
+    "location": "Karen, Nairobi",
+    "price": 45000000,
     "bedrooms": 4,
     "property_type": "villa",
     "buy_or_rent": "buy",
-    "description": "Independent 4BHK villa with private garden and terrace. Gated colony with park-facing units."
+    "description": "Independent 4-bedroom villa with mature garden, servant quarter and high privacy walls. Quiet, leafy Karen neighborhood."
   },
   {
     "property_id": "L006",
-    "location": "Dwarka Sector 12, Delhi",
-    "price": 35000,
+    "location": "Lavington, Nairobi",
+    "price": 95000,
     "bedrooms": 3,
     "property_type": "apartment",
     "buy_or_rent": "rent",
-    "description": "Spacious 3BHK society flat, metro connectivity on walking distance, schools nearby. Family preferred."
+    "description": "Spacious 3-bedroom Lavington apartment with en-suite rooms, DSQ and ample parking. Family preferred. Water and security included."
   },
   {
     "property_id": "L007",
-    "location": "Powai, Mumbai",
+    "location": "Lavington, Nairobi",
     "price": 32000000,
     "bedrooms": 3,
     "property_type": "apartment",
     "buy_or_rent": "buy",
-    "description": "Lake-view 3BHK in a well-known township with international school inside the campus."
+    "description": "3-bedroom apartment in a well-managed Lavington block with lift, backup power and green views toward the Karura forest edge."
   },
   {
     "property_id": "L008",
-    "location": "Whitefield, Bengaluru",
-    "price": 12000000,
+    "location": "Kilimani, Nairobi",
+    "price": 12500000,
     "bedrooms": 2,
     "property_type": "apartment",
     "buy_or_rent": "buy",
-    "description": "Newly constructed 2BHK with modular kitchen and balcony. IT hub connectivity via road and metro."
+    "description": "Newly built 2-bedroom apartment with modern kitchen and balcony. Close to hospitals and shopping along Ring Road Kilimani."
   },
   {
     "property_id": "L009",
-    "location": "Vasant Kunj, Delhi",
-    "price": 250000,
+    "location": "Karen, Nairobi",
+    "price": 150000,
     "bedrooms": 4,
     "property_type": "villa",
     "buy_or_rent": "rent",
-    "description": "Luxury 4BHK farmhouse-style villa on rent, forest-facing, with driver quarters and servant rooms."
+    "description": "Luxury 4-bedroom furnished villa on rent in Karen with garden, pool, DSQ and gated security. Ideal for diplomats and expats."
   },
   {
     "property_id": "L010",
-    "location": "Juhu, Mumbai",
-    "price": 95000000,
+    "location": "Westlands, Nairobi",
+    "price": 60000000,
     "bedrooms": 4,
     "property_type": "penthouse",
     "buy_or_rent": "buy",
-    "description": "Ultra-premium sea-facing penthouse with private deck, home theatre and imported fittings."
+    "description": "Ultra-modern 4-bedroom penthouse in Westlands with private terrace, home office and imported fittings. Stunning city views."
   },
   {
     "property_id": "L011",
-    "location": "Indiranagar, Bengaluru",
-    "price": 150000,
+    "location": "Nyali, Mombasa",
+    "price": 55000,
     "bedrooms": 2,
     "property_type": "apartment",
     "buy_or_rent": "rent",
-    "description": "Tastefully renovated 2BHK on 100 Feet Road, above boutique retail. Pet friendly building."
+    "description": "Sea-breeze 2-bedroom apartment in Nyali, a short drive from Nyali Beach. Fitted kitchen, balcony and ample parking."
   },
   {
     "property_id": "L012",
-    "location": "Noida Sector 150, Delhi NCR",
+    "location": "Nyali, Mombasa",
     "price": 16000000,
     "bedrooms": 3,
     "property_type": "apartment",
     "buy_or_rent": "buy",
-    "description": "Low-density 3BHK project with 80% open green area, cricket pitch and olympic-size swimming pool."
+    "description": "3-bedroom apartment in a new Nyali development with pool, gym and CCTV. Easy drive to the beaches and Mombasa CBD."
   },
   {
     "property_id": "L013",
-    "location": "Malad West, Mumbai",
-    "price": 22000,
-    "bedrooms": 1,
+    "location": "Diani",
+    "price": 25000,
+    "bedrooms": 0,
     "property_type": "studio",
     "buy_or_rent": "rent",
-    "description": "Affordable furnished studio apartment near Inorbit mall. Water and maintenance included."
+    "description": "Affordable furnished studio steps from Diani Beach. Perfect for short stays and remote work. Water and internet included."
   },
   {
     "property_id": "L014",
-    "location": "Sarjapur Road, Bengaluru",
+    "location": "Diani",
     "price": 9500000,
     "bedrooms": 2,
     "property_type": "villa",
     "buy_or_rent": "buy",
-    "description": "Row villa 2BHK with own roof rights in a community of 60 homes. Ideal first purchase for families."
+    "description": "Beachside 2-bedroom villa in a Diani community of 40 homes with shared pool. Great holiday home or rental income."
   },
   {
     "property_id": "L015",
-    "location": "Gurgaon Sector 44, Delhi NCR",
-    "price": 110000,
+    "location": "Garissa",
+    "price": 60000,
     "bedrooms": 3,
-    "property_type": "apartment",
+    "property_type": "house",
     "buy_or_rent": "rent",
-    "description": "Premium 3BHK on rent with golf-course view, concierge services and club membership privileges."
+    "description": "Solid 3-bedroom house in Garissa town with fenced compound, borehole and solar backup. Near schools and the county hospital."
   }
 ]

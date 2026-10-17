@@ -69,7 +69,7 @@ def qualifier_node(state: AgentState) -> dict:
         "Great, I have everything I need: "
         f"{'rent' if profile.buy_or_rent == 'rent' else 'buy'}, "
         f"{profile.bedrooms} bedroom(s) in {profile.location} "
-        f"around INR {profile.budget:,}. Let me search my listings."
+        f"around KSh {profile.budget:,}. Let me search my listings."
     )
     return {"lead": profile, "agent_reply": reply}
 
