@@ -133,3 +133,45 @@ LLM_MODEL=gpt-4o-mini
 2. Tweak prompts in `src/lead_agent/prompts.py` to match your brand voice.
 3. Extend `data/faqs.json` or `listings.json` as needed.
 4. Implement the actual WhatsApp webhook in `webhooks/whatsapp/app.py` when ready.
+
+## How it works
+
+Every message goes through a router that picks one of four paths:
+
+1. **property_search** -> the qualifier asks for budget, location, bedrooms and buy/rent until it has all four -> the search node calls the `search_listings` tool
+2. **viewing_request** -> proposes a viewing slot -> pauses with `interrupt()` until a human approves -> only then confirms
+3. **general_faq** -> answers from `faqs.json`
+4. **human_handoff** -> flags the lead and tells them a human agent is taking over
+
+Memory uses LangGraph checkpointing with the phone number as `thread_id`, so a returning lead continues the same conversation. Phone numbers are masked in logs.
+
+## Sample conversation
+
+    User:  Hi, I'm looking for a place.
+    Agent: To find the right property, I need a bit more info: what is your budget?
+    User:  I want to rent, budget around 90000 per month
+    Agent: Which city or neighbourhood are you looking in?
+    User:  Kilimani, 2 bedrooms
+    Agent: L002 - Kilimani, Nairobi - KSh 85,000 / month - 2 bedrooms - fully furnished with borehole water & backup power.
+
+    User:  Can I view the first one?
+    [Paused: human agent approves the proposed slot]
+    Agent: Your viewing for L003 is confirmed for Wed 21 Oct 2026 at 11:00 AM.
+
+## Run with a free model (Groq)
+
+Create a `.env` file:
+
+    OPENAI_API_KEY=
+    OPENAI_BASE_URL=https://api.groq.com/openai/v1
+    LLM_MODEL=openai/gpt-oss-120b
+
+Then run:
+
+    python tests\test_conversations.py
+
+## Roadmap
+
+- WhatsApp Cloud API webhook
+- Persistent checkpointer (SQLite/Postgres) so state survives restarts
+- Real listings API and calendar integration
